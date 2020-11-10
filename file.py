@@ -1,5 +1,5 @@
 
 string ="teststring"
-b = 4
+b = 10
 for i in string:
     print(i)
