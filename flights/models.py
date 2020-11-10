@@ -62,9 +62,9 @@ class Flight(models.Model): #inherits from models.model
     def is_valid_flight(self): # TEST: is this a valid flight?
         # return self.origin != self.destination or self.duration > 0 #Bug found with tests.py: shouldn't be OR, the flight should pass BOTH tests to be valid
         return self.origin != self.destination and self.duration > 0 # BUG HERE!!!
-
-
    
+
+
 class Passenger(models.Model):
     first = models.CharField(max_length=64)
     last = models.CharField(max_length=64)
