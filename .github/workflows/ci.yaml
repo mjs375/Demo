@@ -1,7 +1,7 @@
 name: Testing
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   test_project:
